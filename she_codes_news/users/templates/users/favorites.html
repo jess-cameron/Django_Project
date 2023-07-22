@@ -1,0 +1,14 @@
+<!-- users/templates/users/createAccount.html -->
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Favorite News</h2>
+    <div id="all-stories">
+        {% if favorite_stories %}
+            {% for story in favorite_stories %}
+                {% include "./storyCard.html" with story=story %}
+            {% endfor %}
+        {% else %}
+            <p>No stories are available.</p>
+        {% endif %}
+    </div>
+{% endblock %}

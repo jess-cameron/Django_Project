@@ -12,4 +12,5 @@ urlpatterns = [
     path('add_favorite/<int:news_story_id>/', views.add_favorite, name='add_favorite'),
     path('remove_favorite/<int:news_story_id>/', views.remove_favorite, name='remove_favorite'),
     path('favorites/', views.FavoriteView, name='favorites'),
+    path('add-story/', views.AddStoryView.as_view(), name='add_story'),
 ]

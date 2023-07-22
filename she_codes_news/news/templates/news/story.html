@@ -1,4 +1,3 @@
-<!-- news/templates/news/story.html -->
 {% extends "base.html" %}
 {% load static %}
 {% block stylesheets %}
@@ -10,17 +9,21 @@
         <h2>{{ story.title }}</h2>
         <h4>{{ story.author }}</h4>
         {% if user.is_authenticated %}
-        {% if is_favorite %}
-            <a href="{% url 'news:remove_favorite' news_story_id=story.id %}">Remove from Favorites</a>
-        {% else %}
-            <a href="{% url 'news:add_favorite' news_story_id=story.id %}">Add to Favorites</a>
+            {% if is_favorite %}
+                <a href="{% url 'news:remove_favorite' news_story_id=story.id %}">Remove from Favorites</a>
+            {% else %}
+                <a href="{% url 'news:add_favorite' news_story_id=story.id %}">Add to Favorites</a>
+            {% endif %}
         {% endif %}
-    {% endif %}
         <div id="story-content">
-            <img src="{% static '/news/images/placeholder-5.jpg' %}">
+            {% if story.image %}
+                <img src="{{ story.image.url }}" alt="{{ story.title }}">
+            {% else %}
+                <img src="{% static 'news/images/placeholder-5.jpg' %}" alt="{{ story.title }}">
+            {% endif %}
             {{ story.content|linebreaks }}
-
         </div>
     </div>
 {% endblock %}
+
 

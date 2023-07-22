@@ -6,14 +6,16 @@ from .models import NewsStory
 class StoryForm(ModelForm):
     class Meta:        
         model = NewsStory        
-        fields = ['title', 'pub_date', 'content']
+        fields = ['title', 'pub_date', 'content', 'image']
         widgets = {
             'pub_date': forms.DateInput(
-            format='%m/%d/%Y',
-            attrs={
-                'class':'form-control',
-                'placeholder':'Select a date',
-                'type':'date'
-            }
-        ),
-    }
+                format='%m/%d/%Y',
+                attrs={
+                    'class': 'form-control',
+                    'placeholder': 'Select a date',
+                    'type': 'date'
+                }
+            ),
+            'image': forms.ClearableFileInput(attrs={'class': 'form-control'}),
+        }
+

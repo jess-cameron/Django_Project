@@ -6,6 +6,7 @@ class NewsStory(models.Model):
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     pub_date = models.DateTimeField()
     content = models.TextField()
+    image = models.ImageField(upload_to='news.images/', blank=True, null=True)
 
 class UserFavorite(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)

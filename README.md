@@ -15,10 +15,10 @@ Not included - I didn't do an ERD. I must have missed that class. Apologies.
 
 ## Project Features
 - [x] Order stories by date
-![ Stories are ordered by date. ]( ./images/orderstoriesbydate.png )
+![ Stories are ordered by date. ]( ../images/orderstoriesbydate.png )
 
 - [x] Styled "new story" form
-![ New story form was created. Limited css styling. ]( ./images/stylednewstoryform.png )
+![ New story form was created. Limited css styling. ]( ../images/stylednewstoryform.png )
 
 - [x] Story images
 ![ Functionality added to add an image when creating a new story. I missed this class but added it later. ]( ./images/storyimages.png  )

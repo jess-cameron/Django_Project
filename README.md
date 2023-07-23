@@ -15,25 +15,25 @@ Not included - I didn't do an ERD. I must have missed that class. Apologies.
 
 ## Project Features
 - [x] Order stories by date
-![ Stories are ordered by date. ]( Images/orderstoriesbydate.png )
+![ Stories are ordered by date. ]( images/orderstoriesbydate.png )
 
 - [x] Styled "new story" form
-![ New story form was created. Limited css styling. ]( Images/stylednewstoryform.png )
+![ New story form was created. Limited css styling. ]( images/stylednewstoryform.png )
 
 - [x] Story images
-![ Functionality added to add an image when creating a new story. I missed this class but added it later. ]( Images/storyimages.png  )
+![ Functionality added to add an image when creating a new story. I missed this class but added it later. ]( images/storyimages.png  )
 
 - [x] Log-in
-![ {{ Log in and Log out functionality }} ]( Images/login.png )
+![ Log in and Log out functionality ]( images/Login.png )
 
 - [x] log-out
-![ {{ Log in and Log out functionality }} ]( Images/logout.png )
+![ Log in and Log out functionality ]( images/Logout.png )
 
 - [ ] "Account view" page
 ![ Did not create. ]
 
 - [x] "Create Account" page
-![ Functionality to create a new user account ]( Images/createaccount.png )
+![ Functionality to create a new user account ]( images/createaccount.png )
 
 - [ ] View stories by author
 ![ Did not create. ]
@@ -48,5 +48,5 @@ only visible when a user *is* logged in
 ## Additional Features:
 
 - [x] Add the ability to “favourite” stories and see a page with your favourite stories.
-![ Created the ability to favourite and un-favourite stories. Added a page to the nav bar but did not get time to complete it, to display a summary of favourited stories. ]( Images/addtofavourites.png ) 
-![  ]( Images/removefromfavourites.png )
+![ Created the ability to favourite and un-favourite stories. Added a page to the nav bar but did not get time to complete it, to display a summary of favourited stories. ] ( images/addtofavourites.png ) 
+![  ]( images/removefromfavourites.png )
